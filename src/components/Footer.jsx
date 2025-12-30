@@ -10,17 +10,18 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Opening Hours</h4>
             <p>
-              Monday - Thursday: 12pm - 11pm<br />
-              Friday - Saturday: 12pm - 12am<br />
-              Sunday: 12pm - 10:30pm
+              Tuesday - Thursday: 5pm - 10pm<br />
+              Friday - Saturday: 12pm - 11pm<br />
+              Sunday: 12pm - 9pm<br />
+              Monday: Closed
             </p>
           </div>
 
-          {/* Logo/Crest Center */}
+          {/* Logo/Name Center */}
           <div className="footer-section footer-logo">
-            <div className="footer-logo-text">Annie Twomey's</div>
-            <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
-              Southgate, London
+            <div className="footer-logo-text">La Bella Tavola</div>
+            <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontStyle: 'italic' }}>
+              Authentic Italian Cuisine
             </p>
 
             {/* Social Icons */}
@@ -52,10 +53,9 @@ const Footer = () => {
           <div className="footer-section" style={{ textAlign: 'right' }}>
             <h4>Quick Links</h4>
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <Link to="/live-sport" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Live Sport</Link>
               <Link to="/menu" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Menu</Link>
-              <Link to="/whats-on" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>What's On</Link>
-              <Link to="/private-hire" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Private Hire</Link>
+              <Link to="/about" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>About Us</Link>
+              <Link to="/private-dining" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Private Dining</Link>
               <Link to="/contact" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Contact</Link>
             </nav>
           </div>
@@ -63,9 +63,9 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="footer-bottom">
-          <p>Annie Twomey's - 123 High Street, Southgate, London N14 6AA</p>
-          <p>Tel: 020 1234 5678 | info@annietwomeys.co.uk</p>
-          <p style={{ marginTop: '1rem' }}>&copy; {new Date().getFullYear()} Annie Twomey's. All rights reserved.</p>
+          <p>La Bella Tavola - 42 High Street, London W1K 5AB</p>
+          <p>Tel: 020 7946 0958 | info@labellatavola.co.uk</p>
+          <p style={{ marginTop: '1rem' }}>&copy; {new Date().getFullYear()} La Bella Tavola. All rights reserved.</p>
         </div>
       </div>
     </footer>

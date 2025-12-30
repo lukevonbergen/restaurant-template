@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lato:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --primary-bg: #0A0A0A;
-  --secondary-bg: #1A1A1A;
-  --tertiary-bg: #141414;
-  --accent-green: #A91C1F;
-  --accent-green-dark: #8A1619;
-  --accent-green-light: #C42326;
-  --highlight-gold: #BB7A00;
-  --highlight-gold-light: #D99000;
-  --text-primary: #F5F5F5;
-  --text-secondary: #9A9A9A;
-  --text-muted: #6A6A6A;
-  --border-color: #2A2A2A;
-  --overlay-dark: rgba(10, 10, 10, 0.85);
-  --overlay-medium: rgba(10, 10, 10, 0.7);
+  --primary-bg: #1a1410;
+  --secondary-bg: #2a2420;
+  --tertiary-bg: #221c18;
+  --accent-green: #8B0000;
+  --accent-green-dark: #6B0000;
+  --accent-green-light: #A52A2A;
+  --highlight-gold: #C9A962;
+  --highlight-gold-light: #D4BC7A;
+  --text-primary: #F5F0E8;
+  --text-secondary: #B8B0A8;
+  --text-muted: #7A7470;
+  --border-color: #3A3430;
+  --overlay-dark: rgba(26, 20, 16, 0.9);
+  --overlay-medium: rgba(26, 20, 16, 0.75);
 }
 
 * {
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Lato', sans-serif;
   font-size: 18px;
   line-height: 1.7;
   color: var(--text-primary);
@@ -42,7 +42,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
   line-height: 1.2;
   color: var(--text-primary);
@@ -376,9 +376,9 @@ section {
   font-size: 1.1rem;
 }
 
-/* Celtic Decorative Elements */
+/* Decorative Elements */
 .celtic-border {
-  height: 2px;
+  height: 1px;
   background: linear-gradient(
     90deg,
     transparent 0%,
@@ -386,8 +386,21 @@ section {
     var(--highlight-gold) 80%,
     transparent 100%
   );
-  max-width: 200px;
+  max-width: 120px;
   margin: 1.5rem auto;
+  position: relative;
+}
+
+.celtic-border::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: var(--highlight-gold);
+  border-radius: 50%;
 }
 
 .celtic-divider {
@@ -426,7 +439,7 @@ section {
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem 2.5rem;
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Lato', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -759,7 +772,7 @@ section {
 .form-select {
   width: 100%;
   padding: 1rem;
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   color: var(--text-primary);
   background: var(--secondary-bg);
@@ -878,7 +891,7 @@ section {
 .newsletter-input {
   flex: 1;
   padding: 1rem 1.5rem;
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   color: var(--text-primary);
   background: var(--primary-bg);

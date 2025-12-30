@@ -33,10 +33,9 @@ const Navigation = () => {
 
   const navLinks = [
     { path: '/', label: 'Home' },
-    { path: '/live-sport', label: 'Live Sport' },
     { path: '/menu', label: 'Menu' },
-    { path: '/whats-on', label: "What's On" },
-    { path: '/private-hire', label: 'Private Hire' },
+    { path: '/about', label: 'About' },
+    { path: '/private-dining', label: 'Private Dining' },
     { path: '/contact', label: 'Contact' },
   ];
 
@@ -44,7 +43,7 @@ const Navigation = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="nav-logo">
-          Annie Twomey's
+          La Bella Tavola
         </Link>
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>

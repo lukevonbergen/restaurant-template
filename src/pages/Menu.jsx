@@ -21,42 +21,54 @@ const Menu = () => {
     return () => window.removeEventListener('scroll', revealOnScroll);
   }, []);
 
-  const starters = [
-    { name: "Homemade Soup of the Day", description: "Served with crusty bread", price: "6.50" },
-    { name: "Irish Soda Bread & Butter", description: "Freshly baked", price: "4.50" },
-    { name: "Chicken Wings", description: "Choice of BBQ or Buffalo sauce", price: "8.50" },
-    { name: "Loaded Nachos", description: "Cheese, jalapenos, salsa, sour cream", price: "9.00" },
-    { name: "Garlic Mushrooms", description: "On toasted sourdough", price: "7.50" },
+  const antipasti = [
+    { name: "Bruschetta Classica", description: "Toasted ciabatta, fresh tomatoes, garlic, basil, extra virgin olive oil", price: "9.50" },
+    { name: "Burrata Pugliese", description: "Creamy burrata, San Marzano tomatoes, aged balsamic, basil pesto", price: "14.00" },
+    { name: "Carpaccio di Manzo", description: "Thinly sliced beef fillet, rocket, parmesan shavings, truffle oil", price: "15.50" },
+    { name: "Calamari Fritti", description: "Crispy fried squid, lemon aioli, fresh herbs", price: "13.00" },
+    { name: "Antipasto Misto", description: "Selection of Italian cured meats, cheeses, olives, grilled vegetables", price: "18.00" },
   ];
 
-  const mains = [
-    { name: "Annie's Irish Stew", description: "Slow-cooked lamb, root vegetables, served with crusty bread", price: "15.00" },
-    { name: "Fish & Chips", description: "Beer-battered cod, mushy peas, tartare sauce", price: "14.50" },
-    { name: "Beef & Guinness Pie", description: "Shortcrust pastry, creamy mash, seasonal veg", price: "15.00" },
-    { name: "Bangers & Mash", description: "Cumberland sausages, onion gravy, garden peas", price: "13.50" },
-    { name: "Chicken & Bacon Club", description: "Triple-decker, fries, coleslaw", price: "12.50" },
-    { name: "8oz Burger", description: "Beef patty, brioche bun, lettuce, tomato, fries (add cheese/bacon +£1)", price: "14.00" },
-    { name: "Veggie Burger", description: "Plant-based patty, brioche bun, fries", price: "13.00" },
+  const pasta = [
+    { name: "Tagliatelle al Ragù", description: "Hand-cut tagliatelle, slow-cooked Bolognese ragù, parmesan", price: "18.00" },
+    { name: "Spaghetti alle Vongole", description: "Spaghetti, fresh clams, white wine, garlic, chilli, parsley", price: "22.00" },
+    { name: "Risotto ai Funghi Porcini", description: "Arborio rice, wild porcini mushrooms, truffle oil, parmesan", price: "19.00" },
+    { name: "Pappardelle al Cinghiale", description: "Wide ribbon pasta, wild boar ragù, rosemary, pecorino", price: "21.00" },
+    { name: "Ravioli di Ricotta e Spinaci", description: "Handmade ravioli, sage butter, toasted pine nuts", price: "17.00" },
+    { name: "Linguine all'Astice", description: "Linguine, half lobster, cherry tomatoes, white wine, garlic", price: "32.00" },
+    { name: "Gnocchi alla Sorrentina", description: "Potato gnocchi, tomato sauce, mozzarella, fresh basil", price: "16.00" },
   ];
 
-  const sundayRoast = [
-    { name: "Roast Beef", description: "With all the trimmings", price: "16.00" },
-    { name: "Roast Chicken", description: "With all the trimmings", price: "15.00" },
-    { name: "Roast Pork", description: "With crackling and all the trimmings", price: "15.00" },
+  const pizza = [
+    { name: "Margherita D.O.P.", description: "San Marzano tomatoes, fior di latte, fresh basil, olive oil", price: "14.00" },
+    { name: "Diavola", description: "Tomato, mozzarella, spicy 'nduja, Calabrian chillies, honey drizzle", price: "16.00" },
+    { name: "Quattro Formaggi", description: "Mozzarella, gorgonzola, taleggio, parmesan, truffle honey", price: "17.00" },
+    { name: "Prosciutto e Rucola", description: "Tomato, mozzarella, Parma ham, rocket, parmesan shavings", price: "18.00" },
+    { name: "Tartufo", description: "Fior di latte, wild mushrooms, black truffle, truffle oil", price: "22.00" },
   ];
 
-  const sides = [
-    { name: "Fries", price: "4.00" },
-    { name: "Sweet Potato Fries", price: "4.50" },
-    { name: "Onion Rings", price: "4.00" },
-    { name: "Seasonal Vegetables", price: "4.50" },
-    { name: "Side Salad", price: "4.00" },
+  const secondi = [
+    { name: "Branzino al Forno", description: "Whole roasted sea bass, lemon, capers, new potatoes, green beans", price: "28.00" },
+    { name: "Filetto di Manzo", description: "8oz beef fillet, roasted vine tomatoes, rocket, aged balsamic", price: "34.00" },
+    { name: "Pollo alla Milanese", description: "Breaded chicken breast, spaghetti pomodoro, fresh basil", price: "22.00" },
+    { name: "Ossobuco alla Milanese", description: "Braised veal shank, saffron risotto, gremolata", price: "32.00" },
+    { name: "Saltimbocca alla Romana", description: "Veal escalope, Parma ham, sage, white wine, butter", price: "26.00" },
   ];
 
-  const desserts = [
-    { name: "Sticky Toffee Pudding", description: "Vanilla ice cream", price: "7.00" },
-    { name: "Apple Crumble", description: "Custard", price: "6.50" },
-    { name: "Chocolate Brownie", description: "With cream", price: "6.50" },
+  const contorni = [
+    { name: "Patate al Rosmarino", description: "Roasted rosemary potatoes", price: "5.50" },
+    { name: "Spinaci all'Aglio", description: "Sautéed spinach, garlic, chilli", price: "5.00" },
+    { name: "Insalata Mista", description: "Mixed leaves, balsamic dressing", price: "5.00" },
+    { name: "Verdure Grigliate", description: "Grilled seasonal vegetables", price: "6.00" },
+    { name: "Funghi Trifolati", description: "Sautéed wild mushrooms, garlic, parsley", price: "6.50" },
+  ];
+
+  const dolci = [
+    { name: "Tiramisù", description: "Classic mascarpone, espresso, Savoiardi, cocoa", price: "9.00" },
+    { name: "Panna Cotta", description: "Vanilla panna cotta, seasonal berry compote", price: "8.00" },
+    { name: "Cannoli Siciliani", description: "Crispy pastry tubes, sweet ricotta, pistachios, chocolate", price: "8.50" },
+    { name: "Affogato al Caffè", description: "Vanilla gelato, hot espresso, amaretti", price: "7.00" },
+    { name: "Torta al Cioccolato", description: "Warm chocolate fondant, vanilla gelato", price: "9.50" },
   ];
 
   const MenuItem = ({ name, description, price }) => (
@@ -72,8 +84,8 @@ const Menu = () => {
   return (
     <main>
       <Helmet>
-        <title>Menu | Annie Twomey's - Irish Pub Southgate</title>
-        <meta name="description" content="Traditional Irish fare and pub classics at Annie Twomey's. From hearty stews to Sunday roasts, enjoy comfort food done right in Southgate, London." />
+        <title>Menu | La Bella Tavola - Italian Restaurant London</title>
+        <meta name="description" content="Explore our authentic Italian menu featuring fresh pasta, wood-fired pizza, and traditional dishes. Made with the finest imported ingredients at La Bella Tavola." />
       </Helmet>
 
       {/* Hero Section */}
@@ -81,75 +93,84 @@ const Menu = () => {
         <div
           className="hero-background"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1498579150354-977475b7ea0b?q=80&w=2670&auto=format&fit=crop)',
           }}
         ></div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1 className="hero-title">Our Menu</h1>
-          <p className="hero-location">Traditional Irish fare & pub classics</p>
+          <h1 className="hero-title">Il Menu</h1>
+          <p className="hero-location">Authentic Italian cuisine</p>
         </div>
       </section>
 
       {/* Menu Sections */}
       <section className="section-dark menu-section">
         <div className="container">
-          {/* Starters */}
+          {/* Antipasti */}
           <div className="menu-category reveal">
-            <h2 className="menu-category-title">Starters</h2>
-            {starters.map((item, index) => (
+            <h2 className="menu-category-title">Antipasti</h2>
+            {antipasti.map((item, index) => (
               <MenuItem key={index} {...item} />
             ))}
           </div>
 
-          {/* Mains */}
+          {/* Pasta & Risotti */}
           <div className="menu-category reveal">
-            <h2 className="menu-category-title">Mains</h2>
-            {mains.map((item, index) => (
+            <h2 className="menu-category-title">Pasta & Risotti</h2>
+            {pasta.map((item, index) => (
               <MenuItem key={index} {...item} />
             ))}
           </div>
 
-          {/* Sunday Roast */}
+          {/* Pizza */}
           <div className="menu-category reveal">
-            <h2 className="menu-category-title">Sunday Roast <span style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>(Sundays Only)</span></h2>
-            <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-              All served with roast potatoes, Yorkshire pudding, seasonal vegetables and gravy
+            <h2 className="menu-category-title">Pizza</h2>
+            <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '0.95rem', fontStyle: 'italic' }}>
+              All pizzas made with our signature 48-hour fermented dough, baked in our wood-fired oven
             </p>
-            {sundayRoast.map((item, index) => (
+            {pizza.map((item, index) => (
               <MenuItem key={index} {...item} />
             ))}
           </div>
 
-          {/* Two Column - Sides & Desserts */}
+          {/* Secondi */}
+          <div className="menu-category reveal">
+            <h2 className="menu-category-title">Secondi</h2>
+            {secondi.map((item, index) => (
+              <MenuItem key={index} {...item} />
+            ))}
+          </div>
+
+          {/* Two Column - Contorni & Dolci */}
           <div className="two-column" style={{ marginTop: '4rem' }}>
             <div className="menu-category reveal">
-              <h2 className="menu-category-title">Sides</h2>
-              {sides.map((item, index) => (
+              <h2 className="menu-category-title">Contorni</h2>
+              {contorni.map((item, index) => (
                 <MenuItem key={index} {...item} />
               ))}
             </div>
 
             <div className="menu-category reveal">
-              <h2 className="menu-category-title">Desserts</h2>
-              {desserts.map((item, index) => (
+              <h2 className="menu-category-title">Dolci</h2>
+              {dolci.map((item, index) => (
                 <MenuItem key={index} {...item} />
               ))}
             </div>
           </div>
 
-          {/* Drinks Note */}
+          {/* Wine Note */}
           <div className="reveal" style={{ textAlign: 'center', marginTop: '4rem', padding: '3rem', background: 'var(--secondary-bg)', border: '1px solid var(--border-color)' }}>
-            <h3 style={{ color: 'var(--highlight-gold)', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Drinks</h3>
+            <h3 style={{ color: 'var(--highlight-gold)', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '2px' }}>La Carta dei Vini</h3>
             <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto' }}>
-              See our full drinks menu at the bar - wide selection of Irish whiskeys, craft beers, and Guinness on draught.
+              Our extensive wine list features carefully selected Italian wines from renowned regions
+              including Tuscany, Piedmont, and Sicily. Ask our sommelier for recommendations.
             </p>
           </div>
 
           {/* Allergy Note */}
           <div className="reveal" style={{ textAlign: 'center', marginTop: '3rem' }}>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-              Please inform staff of any allergies. Menu items subject to availability.
+              Please inform your server of any allergies or dietary requirements. A discretionary 12.5% service charge will be added to your bill.
             </p>
           </div>
         </div>

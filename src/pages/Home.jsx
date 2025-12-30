@@ -28,13 +28,13 @@ const Home = () => {
   return (
     <main>
       <Helmet>
-        <title>Annie Twomey's | Irish Pub Southgate, London | Live Sport & Music</title>
-        <meta name="description" content="Annie Twomey's - Family-run Irish pub in Southgate, London. Live sport on multiple screens, pool, darts, and live music every weekend. Experience authentic Irish hospitality." />
-        <meta name="keywords" content="Irish pub Southgate, live sport pub London, pool darts pub, live music Southgate, Annie Twomey's, GAA London, Premier League pub" />
-        <meta property="og:title" content="Annie Twomey's | Irish Pub Southgate" />
-        <meta property="og:description" content="Family-run Irish pub with live sport, pool, darts, and live music. In the heart of Southgate, London." />
+        <title>La Bella Tavola | Authentic Italian Restaurant London</title>
+        <meta name="description" content="La Bella Tavola - Experience authentic Italian cuisine in the heart of London. Fresh pasta, wood-fired pizza, and traditional recipes from Italy. Book your table today." />
+        <meta name="keywords" content="Italian restaurant London, authentic Italian food, pasta, pizza, fine dining, La Bella Tavola, Italian cuisine" />
+        <meta property="og:title" content="La Bella Tavola | Authentic Italian Restaurant" />
+        <meta property="og:description" content="Experience authentic Italian cuisine in the heart of London. Fresh pasta, wood-fired pizza, and traditional recipes." />
         <meta property="og:type" content="restaurant" />
-        <link rel="canonical" href="https://annietwomeys.co.uk" />
+        <link rel="canonical" href="https://labellatavola.co.uk" />
       </Helmet>
 
       {/* Hero Section */}
@@ -42,26 +42,26 @@ const Home = () => {
         <div
           className="hero-background"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1562259934-6e09f6a89a98?q=80&w=2670&auto=format&fit=crop)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2670&auto=format&fit=crop)',
           }}
         ></div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <p className="hero-subtitle animate-fade-in-up">Experience the Heart of</p>
-          <h1 className="hero-title animate-fade-in-up animate-delay-1">Annie Twomey's</h1>
-          <p className="hero-location animate-fade-in-up animate-delay-2">Southgate</p>
+          <p className="hero-subtitle animate-fade-in-up">Authentic Italian Cuisine</p>
+          <h1 className="hero-title animate-fade-in-up animate-delay-1">La Bella Tavola</h1>
+          <p className="hero-location animate-fade-in-up animate-delay-2">London</p>
         </div>
 
         {/* Quick Actions Bar */}
         <div className="quick-actions">
           <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="quick-action">
-            Southgate, London
+            Mayfair, London
           </a>
           <Link to="/menu" className="quick-action">
             View Menu
           </Link>
-          <a href="tel:02012345678" className="quick-action">
-            020 1234 5678
+          <a href="tel:02079460958" className="quick-action">
+            020 7946 0958
           </a>
         </div>
       </section>
@@ -70,17 +70,18 @@ const Home = () => {
       <section className="section-dark">
         <div className="container">
           <div className="section-header reveal">
-            <h2 className="section-title">Annie Twomey's</h2>
+            <h2 className="section-title">Benvenuti</h2>
             <p className="section-subtitle">
-              A sports-oriented Irish pub with numerous TV screens, pool table and darts board.
-              Irish family-run and situated in the heart of Southgate.
+              Welcome to La Bella Tavola, where the rich traditions of Italian cooking meet the
+              vibrant heart of London. Our family recipes have been passed down through generations,
+              bringing the authentic flavours of Italy to your table.
             </p>
             <p className="section-subtitle" style={{ marginTop: '1rem' }}>
-              All live sport shown. Live music every weekend.
+              Every dish is crafted with love, using the finest imported ingredients and time-honoured techniques.
             </p>
             <div className="celtic-border"></div>
-            <Link to="/contact" className="btn btn-outline" style={{ marginTop: '1.5rem' }}>
-              Read More
+            <Link to="/about" className="btn btn-outline" style={{ marginTop: '1.5rem' }}>
+              Our Story
             </Link>
           </div>
         </div>
@@ -93,13 +94,13 @@ const Home = () => {
             <div
               className="feature-card-bg"
               style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2070)',
+                backgroundImage: 'url(https://images.unsplash.com/photo-1556761223-4c4282c73f77?q=80&w=2565&auto=format&fit=crop)',
               }}
             ></div>
             <div className="feature-card-overlay"></div>
             <div className="feature-card-content">
-              <h3>Live Sport</h3>
-              <Link to="/live-sport" className="btn btn-primary">View Fixtures</Link>
+              <h3>Fresh Pasta</h3>
+              <Link to="/menu" className="btn btn-primary">View Menu</Link>
             </div>
           </div>
 
@@ -107,13 +108,13 @@ const Home = () => {
             <div
               className="feature-card-bg"
               style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2070)',
+                backgroundImage: 'url(https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=2669&auto=format&fit=crop)',
               }}
             ></div>
             <div className="feature-card-overlay"></div>
             <div className="feature-card-content">
-              <h3>Live Music</h3>
-              <Link to="/whats-on" className="btn btn-primary">Find Out More</Link>
+              <h3>Wood-Fired Pizza</h3>
+              <Link to="/menu" className="btn btn-primary">View Menu</Link>
             </div>
           </div>
 
@@ -121,61 +122,62 @@ const Home = () => {
             <div
               className="feature-card-bg"
               style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1572116469696-31de0f17cc34?q=80&w=2074)',
+                backgroundImage: 'url(https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2670&auto=format&fit=crop)',
               }}
             ></div>
             <div className="feature-card-overlay"></div>
             <div className="feature-card-content">
-              <h3>Private Parties</h3>
-              <Link to="/private-hire" className="btn btn-primary">Book Now</Link>
+              <h3>Fine Wines</h3>
+              <Link to="/menu" className="btn btn-primary">Wine List</Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Food Section */}
+      {/* Food Philosophy Section */}
       <section className="section-dark food-section">
         <div className="container">
           <div className="section-header reveal">
-            <h2 className="section-title">Food at Annie's</h2>
+            <h2 className="section-title">La Nostra Cucina</h2>
             <p className="section-subtitle">
-              Enjoy authentic Irish fare and pub classics. From hearty stews to the perfect Sunday roast,
-              our kitchen serves up comfort food done right.
+              Our kitchen is guided by a simple philosophy: respect for ingredients, passion for tradition,
+              and dedication to excellence. From hand-rolled pasta to slow-simmered ragù, every dish
+              tells the story of Italian culinary heritage.
             </p>
             <div className="celtic-border"></div>
             <Link to="/menu" className="btn btn-primary" style={{ marginTop: '1.5rem' }}>
-              View Menu
+              Explore Our Menu
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Live Sport Banner */}
+      {/* Chef's Special Banner */}
       <section className="banner">
         <div
           className="banner-bg"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?q=80&w=2066)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2670&auto=format&fit=crop)',
           }}
         ></div>
         <div className="banner-overlay"></div>
         <div className="banner-content reveal">
           <div className="celtic-border" style={{ marginBottom: '2rem' }}></div>
-          <h2>Live Sport</h2>
-          <p>Every game. Every screen.</p>
-          <Link to="/live-sport" className="btn btn-primary">View Fixtures</Link>
+          <h2>Chef's Specials</h2>
+          <p>Seasonal dishes crafted with the freshest ingredients</p>
+          <Link to="/menu" className="btn btn-primary">View Specials</Link>
           <div className="celtic-border" style={{ marginTop: '2rem' }}></div>
         </div>
       </section>
 
-      {/* What's On Section */}
+      {/* Highlights Section */}
       <section className="section-dark">
         <div className="container">
           <div className="section-header reveal">
-            <h2 className="section-title">What's On</h2>
+            <h2 className="section-title">Discover La Bella Tavola</h2>
             <p className="section-subtitle">
-              From live Premier League and GAA to weekend live music sessions,
-              there's always something happening at Annie Twomey's.
+              Whether it's an intimate dinner for two, a family celebration, or a special occasion,
+              we offer the perfect setting for every moment.
             </p>
           </div>
 
@@ -184,14 +186,14 @@ const Home = () => {
               <div
                 className="event-card-image"
                 style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1665413813194-3b80d79b6421?q=80&w=2070&auto=format&fit=crop)',
+                  backgroundImage: 'url(https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2574&auto=format&fit=crop)',
                 }}
               ></div>
               <div className="event-card-content">
-                <h4>Premier League</h4>
-                <p>Every match live on our big screens. Join the atmosphere for all the action.</p>
-                <Link to="/live-sport" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
-                  Find Out More
+                <h4>Private Dining</h4>
+                <p>Exclusive spaces for intimate gatherings and special celebrations with bespoke menus.</p>
+                <Link to="/private-dining" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
+                  Learn More
                 </Link>
               </div>
             </div>
@@ -200,14 +202,14 @@ const Home = () => {
               <div
                 className="event-card-image"
                 style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=2070)',
+                  backgroundImage: 'url(https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=2532&auto=format&fit=crop)',
                 }}
               ></div>
               <div className="event-card-content">
-                <h4>Live GAA</h4>
-                <p>Catch all the hurling and football action. The best place in London for GAA.</p>
-                <Link to="/live-sport" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
-                  Find Out More
+                <h4>Sunday Lunch</h4>
+                <p>A leisurely Italian feast featuring traditional family-style dishes every Sunday.</p>
+                <Link to="/menu" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
+                  View Menu
                 </Link>
               </div>
             </div>
@@ -216,14 +218,14 @@ const Home = () => {
               <div
                 className="event-card-image"
                 style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=2064)',
+                  backgroundImage: 'url(https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?q=80&w=2529&auto=format&fit=crop)',
                 }}
               ></div>
               <div className="event-card-content">
-                <h4>Weekend Live Music</h4>
-                <p>Live bands and traditional Irish sessions every Friday and Saturday night.</p>
-                <Link to="/whats-on" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
-                  Find Out More
+                <h4>Aperitivo Hour</h4>
+                <p>Join us from 5-7pm for classic Italian cocktails and complimentary cicchetti.</p>
+                <Link to="/contact" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
+                  Book a Table
                 </Link>
               </div>
             </div>
@@ -231,27 +233,27 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Private Hire Banner */}
+      {/* Private Dining Banner */}
       <section className="split-banner">
         <div className="split-banner-images">
           <div
             className="split-image"
             style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2074)',
+              backgroundImage: 'url(https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?q=80&w=2670&auto=format&fit=crop)',
             }}
           ></div>
           <div
             className="split-image"
             style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1525268323446-0505b6fe7778?q=80&w=2072)',
+              backgroundImage: 'url(https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=2670&auto=format&fit=crop)',
             }}
           ></div>
         </div>
         <div className="banner-overlay"></div>
         <div className="banner-content reveal">
-          <h2>Private Hire</h2>
-          <p>Host your event with us</p>
-          <Link to="/private-hire" className="btn btn-primary">Enquire Now</Link>
+          <h2>Private Events</h2>
+          <p>Create unforgettable memories with us</p>
+          <Link to="/private-dining" className="btn btn-primary">Enquire Now</Link>
         </div>
       </section>
 
@@ -259,9 +261,9 @@ const Home = () => {
       <section className="newsletter">
         <div className="container">
           <div className="section-header reveal">
-            <h2 className="section-title">News & Offers</h2>
+            <h2 className="section-title">Stay Connected</h2>
             <p className="section-subtitle">
-              Stay up to date with the latest from Annie Twomey's. Sign up to our mailing list.
+              Subscribe to receive exclusive offers, seasonal menu updates, and invitations to special events.
             </p>
             <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
               <input
@@ -270,7 +272,7 @@ const Home = () => {
                 className="newsletter-input"
                 required
               />
-              <button type="submit" className="btn btn-primary">Sign Up</button>
+              <button type="submit" className="btn btn-primary">Subscribe</button>
             </form>
           </div>
         </div>

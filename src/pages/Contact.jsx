@@ -41,8 +41,8 @@ const Contact = () => {
   return (
     <main>
       <Helmet>
-        <title>Contact | Annie Twomey's - Irish Pub Southgate</title>
-        <meta name="description" content="Contact Annie Twomey's Irish pub in Southgate, London. Find our address, phone number, opening hours, and directions. We'd love to hear from you." />
+        <title>Contact | La Bella Tavola - Italian Restaurant London</title>
+        <meta name="description" content="Contact La Bella Tavola Italian restaurant in London. Find our address, phone number, opening hours, and make a reservation. We'd love to hear from you." />
       </Helmet>
 
       {/* Hero Section */}
@@ -50,13 +50,13 @@ const Contact = () => {
         <div
           className="hero-background"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1974)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2574&auto=format&fit=crop)',
           }}
         ></div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1 className="hero-title">Contact Us</h1>
-          <p className="hero-location">We'd love to hear from you</p>
+          <h1 className="hero-title">Contatti</h1>
+          <p className="hero-location">Get in touch with us</p>
         </div>
       </section>
 
@@ -66,17 +66,17 @@ const Contact = () => {
           <div className="two-column reveal">
             {/* Contact Details */}
             <div>
-              <h2 style={{ marginBottom: '2rem' }}>Get in Touch</h2>
+              <h2 style={{ marginBottom: '2rem' }}>Visit Us</h2>
 
               <div style={{ marginBottom: '2rem' }}>
                 <h3 style={{ color: 'var(--highlight-gold)', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
                   Address
                 </h3>
                 <p style={{ color: 'var(--text-secondary)' }}>
-                  Annie Twomey's<br />
-                  123 High Street<br />
-                  Southgate<br />
-                  London N14 6AA
+                  La Bella Tavola<br />
+                  42 High Street<br />
+                  Mayfair<br />
+                  London W1K 5AB
                 </p>
               </div>
 
@@ -84,8 +84,8 @@ const Contact = () => {
                 <h3 style={{ color: 'var(--highlight-gold)', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
                   Phone
                 </h3>
-                <a href="tel:02012345678" style={{ color: 'var(--text-primary)', fontSize: '1.25rem' }}>
-                  020 1234 5678
+                <a href="tel:02079460958" style={{ color: 'var(--text-primary)', fontSize: '1.25rem' }}>
+                  020 7946 0958
                 </a>
               </div>
 
@@ -93,8 +93,8 @@ const Contact = () => {
                 <h3 style={{ color: 'var(--highlight-gold)', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
                   Email
                 </h3>
-                <a href="mailto:info@annietwomeys.co.uk" style={{ color: 'var(--text-primary)' }}>
-                  info@annietwomeys.co.uk
+                <a href="mailto:info@labellatavola.co.uk" style={{ color: 'var(--text-primary)' }}>
+                  info@labellatavola.co.uk
                 </a>
               </div>
 
@@ -103,16 +103,17 @@ const Contact = () => {
                   Opening Hours
                 </h3>
                 <p style={{ color: 'var(--text-secondary)' }}>
-                  Monday - Thursday: 12pm - 11pm<br />
-                  Friday - Saturday: 12pm - 12am<br />
-                  Sunday: 12pm - 10:30pm
+                  Tuesday - Thursday: 5pm - 10pm<br />
+                  Friday - Saturday: 12pm - 11pm<br />
+                  Sunday: 12pm - 9pm<br />
+                  Monday: Closed
                 </p>
               </div>
             </div>
 
             {/* Contact Form */}
             <div>
-              <h2 style={{ marginBottom: '2rem' }}>Send a Message</h2>
+              <h2 style={{ marginBottom: '2rem' }}>Make a Reservation</h2>
               <form className="contact-form" onSubmit={handleSubmit} style={{ maxWidth: '100%' }}>
                 <div className="form-group">
                   <label className="form-label" htmlFor="name">Name *</label>
@@ -161,7 +162,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    placeholder="How can we help?"
+                    placeholder="Please include your preferred date, time, and party size..."
                   ></textarea>
                 </div>
 
@@ -180,20 +181,21 @@ const Contact = () => {
           <div className="section-header reveal">
             <h2 className="section-title">Find Us</h2>
             <p className="section-subtitle">
-              Located in the heart of Southgate, we're easy to find with excellent transport links.
+              Located in the heart of Mayfair, we're easily accessible by tube (Green Park or Bond Street stations)
+              and a short walk from Hyde Park.
             </p>
           </div>
 
           <div className="map-container reveal">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.8894193673846!2d-0.1276!3d51.6325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDM3JzU3LjAiTiAwwrAwNyc0MC4xIlc!5e0!3m2!1sen!2suk!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2701476282454!2d-0.1494!3d51.5074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMwJzI2LjYiTiAwwrAwOCc1Ny44Ilc!5e0!3m2!1sen!2suk!4v1234567890"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Annie Twomey's Location"
+              title="La Bella Tavola Location"
             ></iframe>
           </div>
         </div>
@@ -205,7 +207,7 @@ const Contact = () => {
           <div className="section-header reveal">
             <h2 className="section-title">Follow Us</h2>
             <p className="section-subtitle">
-              Stay up to date with the latest fixtures, events, and offers.
+              Stay updated with our latest dishes, special events, and behind-the-scenes moments.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '2rem' }}>
               <a
