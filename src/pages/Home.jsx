@@ -25,16 +25,34 @@ const Home = () => {
     return () => window.removeEventListener('scroll', revealOnScroll);
   }, []);
 
+  const testimonials = [
+    {
+      name: "Sheline Constant",
+      rating: 5,
+      text: "The food and the customer service was very lovely. I would recommend you book before going because we had to wait a while. Very pricey but worth it."
+    },
+    {
+      name: "Tel Kane",
+      rating: 5,
+      text: "Amazing restaurant, great atmosphere. I would highly recommend them, will definitely be returning."
+    },
+    {
+      name: "Fraser Chapman",
+      rating: 4,
+      text: "Great food & wonderful staff. I ate here yesterday for my sister's 50th birthday. The venue itself is large, modern and clean. We were greeted by a polite Italian man with a passion for Italian football. The food is fantastic. I have eaten in many Italian restaurants and the food here is right up there with the best."
+    }
+  ];
+
   return (
     <main>
       <Helmet>
-        <title>La Bella Tavola | Authentic Italian Restaurant London</title>
-        <meta name="description" content="La Bella Tavola - Experience authentic Italian cuisine in the heart of London. Fresh pasta, wood-fired pizza, and traditional recipes from Italy. Book your table today." />
-        <meta name="keywords" content="Italian restaurant London, authentic Italian food, pasta, pizza, fine dining, La Bella Tavola, Italian cuisine" />
-        <meta property="og:title" content="La Bella Tavola | Authentic Italian Restaurant" />
-        <meta property="og:description" content="Experience authentic Italian cuisine in the heart of London. Fresh pasta, wood-fired pizza, and traditional recipes." />
+        <title>Dolce Vita | Italian Restaurant Wooburn Green, High Wycombe</title>
+        <meta name="description" content="Dolce Vita - The heart of Italy, in the heart of Wooburn Green. Award-winning Italian restaurant serving freshly prepared authentic Italian food. Book your table today." />
+        <meta name="keywords" content="Italian restaurant Wooburn Green, Italian food High Wycombe, Dolce Vita, pizza, pasta, Italian cuisine Buckinghamshire" />
+        <meta property="og:title" content="Dolce Vita | Italian Restaurant Wooburn Green" />
+        <meta property="og:description" content="The heart of Italy, in the heart of Wooburn Green. Award-winning Italian restaurant serving authentic Italian food." />
         <meta property="og:type" content="restaurant" />
-        <link rel="canonical" href="https://labellatavola.co.uk" />
+        <link rel="canonical" href="https://dolcevita-wooburn.co.uk" />
       </Helmet>
 
       {/* Hero Section */}
@@ -42,26 +60,26 @@ const Home = () => {
         <div
           className="hero-background"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2670&auto=format&fit=crop)',
+            backgroundImage: 'url(https://static.where-e.com/United_Kingdom/Dolce-Vita_ee84b00075863028fea80e5ab31d2427.jpg)',
           }}
         ></div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <p className="hero-subtitle animate-fade-in-up">Authentic Italian Cuisine</p>
-          <h1 className="hero-title animate-fade-in-up animate-delay-1">La Bella Tavola</h1>
-          <p className="hero-location animate-fade-in-up animate-delay-2">London</p>
+          <p className="hero-subtitle animate-fade-in-up">Welcome to</p>
+          <h1 className="hero-title animate-fade-in-up animate-delay-1">Dolce Vita</h1>
+          <p className="hero-location animate-fade-in-up animate-delay-2">Wooburn Green</p>
         </div>
 
         {/* Quick Actions Bar */}
         <div className="quick-actions">
-          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="quick-action">
-            Mayfair, London
+          <a href="https://maps.google.com/?q=53+The+Green+Wooburn+Green+HP10+0EU" target="_blank" rel="noopener noreferrer" className="quick-action">
+            Wooburn Green
           </a>
-          <Link to="/menu" className="quick-action">
-            View Menu
+          <Link to="/book" className="quick-action">
+            Book a Table
           </Link>
-          <a href="tel:02079460958" className="quick-action">
-            020 7946 0958
+          <a href="tel:01628527942" className="quick-action">
+            01628 527942
           </a>
         </div>
       </section>
@@ -70,115 +88,75 @@ const Home = () => {
       <section className="section-dark">
         <div className="container">
           <div className="section-header reveal">
-            <h2 className="section-title">Benvenuti</h2>
+            <h2 className="section-title">Welcome</h2>
             <p className="section-subtitle">
-              Welcome to La Bella Tavola, where the rich traditions of Italian cooking meet the
-              vibrant heart of London. Our family recipes have been passed down through generations,
-              bringing the authentic flavours of Italy to your table.
-            </p>
-            <p className="section-subtitle" style={{ marginTop: '1rem' }}>
-              Every dish is crafted with love, using the finest imported ingredients and time-honoured techniques.
+              The heart of Italy, in the heart of Wooburn Green
             </p>
             <div className="celtic-border"></div>
-            <Link to="/about" className="btn btn-outline" style={{ marginTop: '1.5rem' }}>
-              Our Story
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* Feature Cards */}
-      <section style={{ padding: 0 }}>
-        <div className="feature-grid">
-          <div className="feature-card reveal">
-            <div
-              className="feature-card-bg"
-              style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1556761223-4c4282c73f77?q=80&w=2565&auto=format&fit=crop)',
-              }}
-            ></div>
-            <div className="feature-card-overlay"></div>
-            <div className="feature-card-content">
-              <h3>Fresh Pasta</h3>
-              <Link to="/menu" className="btn btn-primary">View Menu</Link>
-            </div>
-          </div>
-
-          <div className="feature-card reveal">
-            <div
-              className="feature-card-bg"
-              style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=2669&auto=format&fit=crop)',
-              }}
-            ></div>
-            <div className="feature-card-overlay"></div>
-            <div className="feature-card-content">
-              <h3>Wood-Fired Pizza</h3>
-              <Link to="/menu" className="btn btn-primary">View Menu</Link>
-            </div>
-          </div>
-
-          <div className="feature-card reveal">
-            <div
-              className="feature-card-bg"
-              style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2670&auto=format&fit=crop)',
-              }}
-            ></div>
-            <div className="feature-card-overlay"></div>
-            <div className="feature-card-content">
-              <h3>Fine Wines</h3>
-              <Link to="/menu" className="btn btn-primary">Wine List</Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Food Philosophy Section */}
-      <section className="section-dark food-section">
+      {/* About Section */}
+      <section className="section-darker">
         <div className="container">
-          <div className="section-header reveal">
-            <h2 className="section-title">La Nostra Cucina</h2>
-            <p className="section-subtitle">
-              Our kitchen is guided by a simple philosophy: respect for ingredients, passion for tradition,
-              and dedication to excellence. From hand-rolled pasta to slow-simmered ragù, every dish
-              tells the story of Italian culinary heritage.
-            </p>
-            <div className="celtic-border"></div>
-            <Link to="/menu" className="btn btn-primary" style={{ marginTop: '1.5rem' }}>
-              Explore Our Menu
-            </Link>
+          <div className="two-column reveal" style={{ alignItems: 'center' }}>
+            <div>
+              <h2 style={{ marginBottom: '1.5rem' }}>We at Dolce Vita</h2>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+                bring you the taste of freshly prepared Italian foods, made from specially sourced
+                quality ingredients, just like "Mamma Makes".
+              </p>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+                Bringing you the authentic Italian experience, the charming Dolce Vita staff create
+                a marvellous, warm and friendly atmosphere, in their award winning restaurant.
+              </p>
+              <p style={{ color: 'var(--terracotta)', fontStyle: 'italic', fontSize: '1.35rem', marginBottom: '1.5rem', fontFamily: "'Cormorant Garamond', serif" }}>
+                Eat. Live. Love. Share the passion
+              </p>
+              <Link to="/menu" className="btn btn-outline">
+                View Our Menu
+              </Link>
+            </div>
+            <div>
+              <div
+                style={{
+                  height: '400px',
+                  backgroundImage: 'url(https://media-cdn.tripadvisor.com/media/photo-s/07/2c/11/94/dolce.jpg)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  border: '1px solid var(--border-color)',
+                }}
+              ></div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Chef's Special Banner */}
+      {/* It's Not Just Pizza Section */}
       <section className="banner">
         <div
           className="banner-bg"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2670&auto=format&fit=crop)',
+            backgroundImage: 'url(/images/pizza.jpg)',
           }}
         ></div>
         <div className="banner-overlay"></div>
         <div className="banner-content reveal">
           <div className="celtic-border" style={{ marginBottom: '2rem' }}></div>
-          <h2>Chef's Specials</h2>
-          <p>Seasonal dishes crafted with the freshest ingredients</p>
-          <Link to="/menu" className="btn btn-primary">View Specials</Link>
+          <h2>It's Not Just About Pizza</h2>
+          <p>Discover our full range of authentic Italian dishes</p>
+          <Link to="/menu" className="btn btn-primary">View Menu</Link>
           <div className="celtic-border" style={{ marginTop: '2rem' }}></div>
         </div>
       </section>
 
-      {/* Highlights Section */}
+      {/* Our Services */}
       <section className="section-dark">
         <div className="container">
           <div className="section-header reveal">
-            <h2 className="section-title">Discover La Bella Tavola</h2>
-            <p className="section-subtitle">
-              Whether it's an intimate dinner for two, a family celebration, or a special occasion,
-              we offer the perfect setting for every moment.
-            </p>
+            <h2 className="section-title">Our Services</h2>
+            <div className="celtic-border"></div>
           </div>
 
           <div className="event-grid reveal">
@@ -186,28 +164,12 @@ const Home = () => {
               <div
                 className="event-card-image"
                 style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2574&auto=format&fit=crop)',
+                  backgroundImage: 'url(/images/lamb.jpg)',
                 }}
               ></div>
               <div className="event-card-content">
-                <h4>Private Dining</h4>
-                <p>Exclusive spaces for intimate gatherings and special celebrations with bespoke menus.</p>
-                <Link to="/private-dining" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
-                  Learn More
-                </Link>
-              </div>
-            </div>
-
-            <div className="event-card">
-              <div
-                className="event-card-image"
-                style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=2532&auto=format&fit=crop)',
-                }}
-              ></div>
-              <div className="event-card-content">
-                <h4>Sunday Lunch</h4>
-                <p>A leisurely Italian feast featuring traditional family-style dishes every Sunday.</p>
+                <h4>View Our Menu</h4>
+                <p>See anything you like the look of? Why not join us for a delicious meal.</p>
                 <Link to="/menu" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
                   View Menu
                 </Link>
@@ -218,63 +180,208 @@ const Home = () => {
               <div
                 className="event-card-image"
                 style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?q=80&w=2529&auto=format&fit=crop)',
+                  backgroundImage: 'url(/images/wine.jpg)',
                 }}
               ></div>
               <div className="event-card-content">
-                <h4>Aperitivo Hour</h4>
-                <p>Join us from 5-7pm for classic Italian cocktails and complimentary cicchetti.</p>
-                <Link to="/contact" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
-                  Book a Table
+                <h4>Reservation</h4>
+                <p>Request a reservation. Call us on 01628 527942 to book your table.</p>
+                <Link to="/book" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
+                  Book Now
                 </Link>
+              </div>
+            </div>
+
+            <div className="event-card">
+              <div
+                className="event-card-image"
+                style={{
+                  backgroundImage: 'url(/images/shrimp.jpg)',
+                }}
+              ></div>
+              <div className="event-card-content">
+                <h4>Collection</h4>
+                <p>Simply order by phone or come in and place your order. Credit card payments welcome.</p>
+                <a href="tel:01628527942" className="btn btn-outline" style={{ padding: '0.75rem 1.5rem' }}>
+                  Call Us
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Private Dining Banner */}
+      {/* Licensed Bar */}
+      <section className="section-darker">
+        <div className="container">
+          <div className="section-header reveal">
+            <h2 className="section-title">Licensed Bar</h2>
+            <p className="section-subtitle">
+              Relax on our patio with a drink, or enjoy a glass of wine with your meal.
+              Fully licensed bar available.
+            </p>
+            <div className="celtic-border"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section style={{ padding: 0 }}>
+        <div className="feature-grid">
+          <div className="feature-card reveal">
+            <div
+              className="feature-card-bg"
+              style={{
+                backgroundImage: 'url(/images/pizza.jpg)',
+              }}
+            ></div>
+            <div className="feature-card-overlay"></div>
+            <div className="feature-card-content">
+              <h3>Pizza</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Authentic Italian</p>
+            </div>
+          </div>
+
+          <div className="feature-card reveal">
+            <div
+              className="feature-card-bg"
+              style={{
+                backgroundImage: 'url(/images/lamb.jpg)',
+              }}
+            ></div>
+            <div className="feature-card-overlay"></div>
+            <div className="feature-card-content">
+              <h3>Lamb</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Tender & Succulent</p>
+            </div>
+          </div>
+
+          <div className="feature-card reveal">
+            <div
+              className="feature-card-bg"
+              style={{
+                backgroundImage: 'url(/images/tuna-steak.jpg)',
+              }}
+            ></div>
+            <div className="feature-card-overlay"></div>
+            <div className="feature-card-content">
+              <h3>Tuna Steak</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Fresh from the Sea</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* More Gallery */}
+      <section style={{ padding: 0 }}>
+        <div className="feature-grid">
+          <div className="feature-card reveal">
+            <div
+              className="feature-card-bg"
+              style={{
+                backgroundImage: 'url(/images/shrimp.jpg)',
+              }}
+            ></div>
+            <div className="feature-card-overlay"></div>
+            <div className="feature-card-content">
+              <h3>Shrimp</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Perfectly Prepared</p>
+            </div>
+          </div>
+
+          <div className="feature-card reveal">
+            <div
+              className="feature-card-bg"
+              style={{
+                backgroundImage: 'url(/images/swordfish.jpg)',
+              }}
+            ></div>
+            <div className="feature-card-overlay"></div>
+            <div className="feature-card-content">
+              <h3>Swordfish</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Catch of the Day</p>
+            </div>
+          </div>
+
+          <div className="feature-card reveal">
+            <div
+              className="feature-card-bg"
+              style={{
+                backgroundImage: 'url(/images/wine.jpg)',
+              }}
+            ></div>
+            <div className="feature-card-overlay"></div>
+            <div className="feature-card-content">
+              <h3>Fine Wines</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Licensed Bar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="section-dark">
+        <div className="container">
+          <div className="section-header reveal">
+            <h2 className="section-title">What Our Customers Say</h2>
+            <div className="celtic-border"></div>
+          </div>
+
+          <div className="event-grid reveal">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="event-card"
+                style={{ background: 'var(--secondary-bg)' }}
+              >
+                <div style={{ padding: '2rem' }}>
+                  <div style={{ marginBottom: '1rem' }}>
+                    {[...Array(5)].map((_, i) => (
+                      <span
+                        key={i}
+                        style={{
+                          color: i < testimonial.rating ? 'var(--terracotta)' : 'var(--text-muted)',
+                          fontSize: '1.25rem'
+                        }}
+                      >
+                        ★
+                      </span>
+                    ))}
+                  </div>
+                  <p style={{ color: 'var(--text-secondary)', fontStyle: 'italic', marginBottom: '1.5rem' }}>
+                    "{testimonial.text}"
+                  </p>
+                  <p style={{ color: 'var(--text-primary)', fontWeight: '600' }}>
+                    {testimonial.name}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Reservation CTA */}
       <section className="split-banner">
         <div className="split-banner-images">
           <div
             className="split-image"
             style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?q=80&w=2670&auto=format&fit=crop)',
+              backgroundImage: 'url(/images/swordfish.jpg)',
             }}
           ></div>
           <div
             className="split-image"
             style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=2670&auto=format&fit=crop)',
+              backgroundImage: 'url(/images/tuna-steak.jpg)',
             }}
           ></div>
         </div>
         <div className="banner-overlay"></div>
         <div className="banner-content reveal">
-          <h2>Private Events</h2>
-          <p>Create unforgettable memories with us</p>
-          <Link to="/private-dining" className="btn btn-primary">Enquire Now</Link>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="newsletter">
-        <div className="container">
-          <div className="section-header reveal">
-            <h2 className="section-title">Stay Connected</h2>
-            <p className="section-subtitle">
-              Subscribe to receive exclusive offers, seasonal menu updates, and invitations to special events.
-            </p>
-            <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="newsletter-input"
-                required
-              />
-              <button type="submit" className="btn btn-primary">Subscribe</button>
-            </form>
-          </div>
+          <h2>Make a Reservation</h2>
+          <p>Call 01628 527942 to book your table</p>
+          <Link to="/book" className="btn btn-primary">Book Now</Link>
         </div>
       </section>
     </main>

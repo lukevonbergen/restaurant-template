@@ -34,16 +34,15 @@ const Navigation = () => {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/menu', label: 'Menu' },
-    { path: '/about', label: 'About' },
-    { path: '/private-dining', label: 'Private Dining' },
     { path: '/contact', label: 'Contact' },
+    { path: '/book', label: 'Book' },
   ];
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="nav-logo">
-          La Bella Tavola
+          Dolce Vita
         </Link>
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>

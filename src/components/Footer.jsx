@@ -10,18 +10,17 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Opening Hours</h4>
             <p>
-              Tuesday - Thursday: 5pm - 10pm<br />
-              Friday - Saturday: 12pm - 11pm<br />
-              Sunday: 12pm - 9pm<br />
-              Monday: Closed
+              Monday: Closed<br />
+              Tue - Sat: 12pm - 2:30pm, 5:30pm - 9:30pm<br />
+              Sunday: 12pm - 3:30pm
             </p>
           </div>
 
           {/* Logo/Name Center */}
           <div className="footer-section footer-logo">
-            <div className="footer-logo-text">La Bella Tavola</div>
-            <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontStyle: 'italic' }}>
-              Authentic Italian Cuisine
+            <div className="footer-logo-text">Dolce Vita</div>
+            <p className="footer-tagline">
+              The heart of Italy, in the heart of Wooburn Green
             </p>
 
             {/* Social Icons */}
@@ -52,20 +51,19 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="footer-section" style={{ textAlign: 'right' }}>
             <h4>Quick Links</h4>
-            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <Link to="/menu" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Menu</Link>
-              <Link to="/about" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>About Us</Link>
-              <Link to="/private-dining" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Private Dining</Link>
-              <Link to="/contact" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Contact</Link>
+            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <Link to="/menu">Menu</Link>
+              <Link to="/book">Book a Table</Link>
+              <Link to="/contact">Contact</Link>
             </nav>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="footer-bottom">
-          <p>La Bella Tavola - 42 High Street, London W1K 5AB</p>
-          <p>Tel: 020 7946 0958 | info@labellatavola.co.uk</p>
-          <p style={{ marginTop: '1rem' }}>&copy; {new Date().getFullYear()} La Bella Tavola. All rights reserved.</p>
+          <p>Dolce Vita - 53 The Green, Wooburn Green, High Wycombe, HP10 0EU</p>
+          <p>Tel: 01628 527942 | Cash and Card payments accepted</p>
+          <p style={{ marginTop: '1rem' }}>&copy; {new Date().getFullYear()} Dolce Vita. All rights reserved.</p>
         </div>
       </div>
     </footer>
